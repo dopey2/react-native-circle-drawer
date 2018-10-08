@@ -89,3 +89,9 @@ render(){
     }
     
 ```
+
+# Licence
+MIT
+
+# Credit
+Karan Shah
