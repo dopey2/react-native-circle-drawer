@@ -18,7 +18,7 @@ import Drawer from 'react-native-circle-drawer'
 
 render(){
     return(
-        <Drawer sideMenu={this.renderSideMenu}>
+        <Drawer sideMenu={this.renderSideMenu()}>
             <App/>
         </Drawer>
     )
