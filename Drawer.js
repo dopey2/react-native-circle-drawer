@@ -17,7 +17,7 @@ export default class Drawer extends Component{
   }
 
   componentDidMount(){
-   var {width, height} = {...Dimensions.get('window')};
+   var {width, height} = Dimensions.get('window');
    this.setState({width: width, height: height});
    
    this.defaultTopRightView = -width;
@@ -83,9 +83,9 @@ export default class Drawer extends Component{
 
   renderDrawer(){
 
-    const {primaryColor, secondaryColor, cancelColor, marginLeft, marginTop} = {...this.props};
-    const {scaleInner, scaleOutter, opacity, closeTop, sideMenuTop, topRightView} = {...this};
-    const {status, width, height} = {...this.state};
+    const {primaryColor, secondaryColor, cancelColor, marginLeft, marginTop} = this.props;
+    const {scaleInner, scaleOutter, opacity, closeTop, sideMenuTop, topRightView} = this;
+    const {status, width, height} = this.state;
 
     const mL = marginLeft;          // marginLeft of the middle of the circle
     const mT = marginTop;           // marginTop  of the middle of the circle
