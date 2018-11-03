@@ -33,7 +33,7 @@ export default class Drawer extends Component{
 
 
   open(){
-    const {scaleInner, scaleOutter, closeTop, opacity, sideMenuTop, topRightView, defaultTopRightView} = {...this};
+    const {scaleInner, scaleOutter, closeTop, opacity, sideMenuTop, topRightView, defaultTopRightView} = this;
     this.setState({status: "transition"}, ()=>{
       this.props.openStart && this.props.openStart()
       Animated.parallel([
@@ -52,7 +52,7 @@ export default class Drawer extends Component{
   }
 
   close(){
-    const {scaleInner, scaleOutter, closeTop, opacity, sideMenuTop, topRightView, defaultTopRightView} = {...this};
+    const {scaleInner, scaleOutter, closeTop, opacity, sideMenuTop, topRightView, defaultTopRightView} = this;
     this.setState({status: "transition"}, ()=>{
       this.props.closeStart && this.props.closeStart()
       Animated.parallel([
@@ -77,7 +77,7 @@ export default class Drawer extends Component{
 
   renderTopRightView(){
     if(this.props.topRightView){
-      return this.props.topRightView
+      return this.props.topRightView;
     }
   }
 
@@ -135,7 +135,7 @@ export default class Drawer extends Component{
           </View>
 
         </View>
-      )
+      );
     }
   }
 
@@ -169,4 +169,4 @@ Drawer.defaultProps  = {
   primaryColor:   "#731ED2",
   secondaryColor: "#9646EC",
   cancelColor:    "#731ED2"
-}
+};
