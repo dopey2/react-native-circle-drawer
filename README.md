@@ -14,11 +14,11 @@ npm install --save react-native-circle-drawer
 # Use
 
 ```javascript
-import Index from 'src/index'
+import Drawer from 'react-native-circle-drawer'
 
 render(){
     return(
-        <Index sideMenu={this.renderSideMenu()}>
+        <Drawer sideMenu={this.renderSideMenu()}>
             <App/>
         </Index>
     )
@@ -78,14 +78,14 @@ render(){
     }
     
     render(){
-        <Index
+        <Drawer
             ref="DRAWER"
             sideMenu={this.renderSideMenu()}
             topRightView={this.renderTopRightView()}
         >
           <Button title="open drawer" onPress={()=>this.openDrawer()} />
           <Text>Main application here!!</Text>
-        </Index>
+        </Drawer>
     
     }
     
