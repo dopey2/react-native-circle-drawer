@@ -2,9 +2,13 @@
   "name": "react-native-circle-drawer",
   "version": "1.0.0",
   "description": "Drawer for react native inspired from Karan shah Navigation Drawer Concept ",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "cpx * example/node_modules/react-native-circle-drawer && cpx dist/* example/node_modules/react-native-circle-drawer/dist",
+    "build": "yarn tsc && yarn copy",
+    "start": "yarn tsc-watch --onSuccess \"yarn copy\"",
+    "postinstall": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -17,10 +21,17 @@
     "Karan",
     "Shah"
   ],
-  "author": "dani.gabor1996@gmail.com",
+  "author": "dopey2",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dopey2/react-native-circle-drawer/issues"
   },
-  "homepage": "https://github.com/dopey2/react-native-circle-drawer#readme"
+  "homepage": "https://github.com/dopey2/react-native-circle-drawer#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.35",
+    "@types/react-native": "^0.66.4",
+    "cpx": "^1.5.0",
+    "tsc-watch": "^4.5.0",
+    "typescript": "^4.4.4"
+  }
 }

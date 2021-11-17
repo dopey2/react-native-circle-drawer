@@ -1,9 +1,9 @@
 # Description
-This is a Drawer for React-Native inspired by Karan Shah Navigation Drawer Concept
+This is a Index for React-Native inspired by Karan Shah Navigation Index Concept
 
 [Karan Shah Dribbble account](https://dribbble.com/karan_shah)
 
-[Karan Shah Navigation Drawer Concept](https://dribbble.com/shots/3661919-Navigation-Drawer-Concept)
+[Karan Shah Navigation Index Concept](https://dribbble.com/shots/3661919-Navigation-Drawer-Concept)
  
  ![drawer gif](https://image.ibb.co/cws5Dp/drawer.gif)
 
@@ -14,13 +14,13 @@ npm install --save react-native-circle-drawer
 # Use
 
 ```javascript
-import Drawer from 'react-native-circle-drawer'
+import Index from 'src/index'
 
 render(){
     return(
-        <Drawer sideMenu={this.renderSideMenu()}>
+        <Index sideMenu={this.renderSideMenu()}>
             <App/>
-        </Drawer>
+        </Index>
     )
 }
 
@@ -78,14 +78,14 @@ render(){
     }
     
     render(){
-        <Drawer
+        <Index
             ref="DRAWER"
             sideMenu={this.renderSideMenu()}
             topRightView={this.renderTopRightView()}
         >
           <Button title="open drawer" onPress={()=>this.openDrawer()} />
           <Text>Main application here!!</Text>
-        </Drawer>
+        </Index>
     
     }
     
