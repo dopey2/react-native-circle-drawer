@@ -1,5 +1,9 @@
+
+[![NPM](https://img.shields.io/npm/v/react-native-circle-drawer)](https://www.npmjs.com/package/react-native-circle-drawer)
+
+
 # Description
-This is a Index for React-Native inspired by Karan Shah Navigation Index Concept
+This is a Drawer for React-Native inspired by Karan Shah Navigation Index Concept
 
 [Karan Shah Dribbble account](https://dribbble.com/karan_shah)
 
@@ -9,7 +13,14 @@ This is a Index for React-Native inspired by Karan Shah Navigation Index Concept
 
 
 # Installation
+```bash
 npm install --save react-native-circle-drawer
+```
+or
+```bash
+yarn add react-native-circle-drawer
+```
+
 
 # Use
 
@@ -55,9 +66,8 @@ render(){
 # Example
 
 ```javascript
-
     openDrawer(){
-        this.refs.DRAWER.open
+        this.refs.DRAWER.open;
     }
     
     renderSideMenu(){
